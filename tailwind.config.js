@@ -1,18 +1,26 @@
 /** @type {import('tailwindcss').Config} */
+
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        ll: {
+          primaryGreen: "#495E57",
+          primaryYellow: "#F4CE14",
+          secondarySalmon: "#EE9972",
+          secondaryTan: "FBDABB",
+          highlightGray: "EDEFEE",
+          highlightBlack: "#333333",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-markazi)"],
+        mono: ["var(--font-karla)"],
       },
     },
   },
   plugins: [],
-}
+};
