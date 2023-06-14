@@ -28,6 +28,13 @@ module.exports = {
           xl: "5rem",
           "2xl": "6rem",
         },
+        margin: {
+          DEFAULT: "0",
+          sm: "0",
+          lg: "0",
+          xl: "0",
+          "2xl": "0",
+        },
       },
     },
   },
