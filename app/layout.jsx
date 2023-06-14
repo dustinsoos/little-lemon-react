@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Markazi_Text } from "next/font/google";
 import { Karla } from "next/font/google";
+import Navbar from "./components/navbar/navbar";
 
 export const metadata = {
   title: "Little Lemon",
@@ -22,7 +23,10 @@ const karla = Karla({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${markazi.variable} ${karla.variable}`}>{children}</body>
+      <body className={`${markazi.variable} ${karla.variable}`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
