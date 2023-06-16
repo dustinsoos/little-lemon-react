@@ -16,19 +16,19 @@ const Navbar = () => {
   };
 
   return (
-    <main className="mt-12 px-4 md:px-24 lg:px-40 xl:px-52">
+    <main className="mt-12 px-4 md:px-24 lg:px-40 xl:px-52 2xl:px-72">
       <div className="">
-        <nav className=" lg:flex-wrap lg:flex lg:justify-between lg:items-center  font-sans text-xl">
+        <nav className=" xl:flex-wrap xl:flex xl:justify-between xl:items-center  font-sans text-xl">
           <div className=" flex justify-between ">
-            <button id="menuBtn" className=" lg:hidden" onClick={handleIsOpen}>
+            <button id="menuBtn" className=" xl:hidden" onClick={handleIsOpen}>
               <Image src="/images/icon_hamburger-menu.svg" width={30} height={30} className=" cursor-pointer " alt="HamburgerMenu"></Image>
             </button>
-            <Image className="hidden lg:block 2xl:w-64" src="/images/Logo.svg" width={200} height={200} alt="logo"></Image>
-            <button className=" lg:hidden">
+            <Image className="hidden xl:block 2xl:w-64" src="/images/Logo.svg" width={200} height={200} alt="logo"></Image>
+            <button className=" xl:hidden">
               <Image src="/images/Basket.svg" width={30} height={30} className=" items" alt="basketIcon"></Image>
             </button>
           </div>
-          <ul id="menu" className="  pt-5  lg:flex lg:gap-14 lg:pt-0 hidden lg:text-2xl ">
+          <ul id="menu" className="  pt-5  xl:flex xl:gap-14 xl:pt-0 hidden lg:text-2xl ">
             <Link href="/" onClick={handleIsClosed} className=" underline text-ll-primaryGreen navLink">
               Home
             </Link>

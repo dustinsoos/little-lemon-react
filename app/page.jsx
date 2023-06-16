@@ -6,18 +6,18 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="   ">
+      <main className="">
         <div className="bg-ll-primaryGreen mt-12">
-          <div className=" pt-14 pb-14 text-white md:flex items-center  justify-between  px-4 md:px-24 lg:px-40 xl:px-52">
+          <div className=" pt-14 pb-14 text-white md:flex items-center  justify-between  px-4 md:px-24 lg:px-40 xl:px-52 2xl:px-72">
             <div className="w-3/4 md:w-1/3 lg:w-1/3 2xl:w-1/3 ">
               <h1 className="font-sans text-5xl xl:text-6xl 2xl:text-7xl text-ll-primaryYellow">Little Lemon</h1>
               <h3 className=" text-2xl mb-4 lg:text-2xl xl:text-3xl 2xl:text-4xl">Chicago</h3>
-              <p className=" font-mono mb-4 xl:text-lg 2xl:text-xl">
+              <p className=" font-mono mb-4 lg:mb-12 xl:text-lg 2xl:text-xl">
                 We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
               </p>
               <Link
                 href="/reservation"
-                className=" text-black font-medium font-sans text-lg rounded-2xl bg-ll-primaryYellow px-4 py-1 2xl:px-8 2xl:py-2 2xl:text-xl hover:bg-ll-primaryGreen hover:text-ll-primaryYellow hover:outline"
+                className=" text-black font-medium font-sans text-lg rounded-2xl bg-ll-primaryYellow px-4 py-1 2xl:px-8 2xl:py-2 2xl:text-xl  hover:bg-ll-primaryGreen hover:text-ll-primaryYellow hover:outline"
               >
                 Reserve a Table
               </Link>
@@ -30,10 +30,10 @@ export default function Home() {
             ></Image>
           </div>
         </div>
-        <section>
-          <div className="  mt-16 px-4 lg:mt-32  md:px-24 lg:px-40 xl:px-52">
+        <section id="menu-cards">
+          <div className="  mt-16 px-4 lg:mt-32  md:px-24 lg:px-40 xl:px-52 2xl:px-72">
             <div className=" flex justify-between mt-24">
-              <h2 className=" text-2xl font-mono font-bold md:text-3xl lg:text-4xl xl:text-5xl">This weeks specials!</h2>
+              <h3 className=" text-2xl font-mono font-bold md:text-3xl lg:text-4xl xl:text-5xl">This weeks specials!</h3>
               <button className=" text-black font-medium font-sans text-lg rounded-2xl bg-ll-primaryYellow px-4 py-0 2xl:px-8 2xl:py-2 2xl:text-xl hover:bg-ll-primaryGreen hover:text-ll-primaryYellow hover:outline">
                 Online Menu
               </button>
@@ -56,7 +56,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/orderonline"
-                    className="block border-2 text-center border-ll-primaryGreen text-ll-primaryGreen font-bold py-2 px-4 rounded hover:bg-ll-primaryGreen hover:text-white"
+                    className="block border-2 text-center border-ll-primaryGreen bg-ll-primaryGreen text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-ll-primaryGreen"
                   >
                     Order a Delivery
                   </Link>
@@ -79,7 +79,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/orderonline"
-                    className="block border-2 text-center border-ll-primaryGreen text-ll-primaryGreen font-bold py-2 px-4 rounded hover:bg-ll-primaryGreen hover:text-white"
+                    className="block border-2 text-center  border-ll-primaryGreen bg-ll-primaryGreen text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-ll-primaryGreen"
                   >
                     Order a Delivery
                   </Link>
@@ -102,12 +102,51 @@ export default function Home() {
                   </p>
                   <Link
                     href="/orderonline"
-                    className="block border-2 text-center border-ll-primaryGreen text-ll-primaryGreen font-bold py-2 px-4 rounded hover:bg-ll-primaryGreen hover:text-white"
+                    className="block border-2 text-center border-ll-primaryGreen bg-ll-primaryGreen text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-ll-primaryGreen"
                   >
                     Order a Delivery
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section id="testimonials" className=" mt-32 lg:mt-64 px-4 md:px-24 lg:px-40 xl:px-52 2xl:px-72">
+          <h3 className=" mb-8 text-2xl font-mono font-bold md:text-3xl lg:text-4xl xl:text-5xl">Testimonials</h3>
+          <div className=" font-mono lg:flex gap-4">
+            <div className=" outline outline-ll-primaryGreen shadow-xl shadow-black/50 p-5 mb-8">
+              <p className=" mb-2 ">⭐⭐⭐⭐⭐</p>
+              <div className=" flex items-center">
+                <Image src="/images/andrew.jpg" width={50} height={50}></Image>
+                <p className=" pl-2 ">- Andrew</p>
+              </div>
+              <p className=" mt-2">&#34;I ordered the Greek Salad and it was so fresh!&#34;</p>
+            </div>
+            <div className=" outline outline-ll-primaryGreen shadow-xl shadow-black/50 p-5 mb-8">
+              <p className=" mb-2 ">⭐⭐⭐⭐⭐</p>
+              <div className=" flex items-center">
+                <Image src="/images/Maria.jpg" width={50} height={50}></Image>
+                <p className=" pl-2 ">- Maria</p>
+              </div>
+              <p className=" mt-2">&#34;I was feeling up to a little dessert so I tried their lemon cake and it was so good!&#34;</p>
+            </div>
+            <div className=" outline outline-ll-primaryGreen shadow-xl shadow-black/50 p-5 mb-8">
+              <p className=" mb-2 ">⭐⭐⭐⭐⭐</p>
+              <div className=" flex items-center">
+                <Image src="/images/Monique.jpg" width={50} height={50}></Image>
+                <p className=" pl-2 ">- Monique</p>
+              </div>
+              <p className=" mt-2">
+                &#34;I ordered a Gyro without some of the ingredients on it and they gave me options to substitue, super nice restaurant!&#34;
+              </p>
+            </div>
+            <div className=" outline outline-ll-primaryGreen shadow-xl shadow-black/50 p-5 mb-8">
+              <p className=" mb-2 ">⭐⭐⭐⭐⭐</p>
+              <div className=" flex items-center">
+                <Image src="/images/Thomas.jpg" width={50} height={50}></Image>
+                <p className=" pl-2 ">- Thomas</p>
+              </div>
+              <p className=" mt-2">&#34;My waiter was super dope, got everything for us when we needed it. Thanks Jimmy!&#34;</p>
             </div>
           </div>
         </section>
