@@ -23,7 +23,9 @@ const Navbar = () => {
             <button id="menuBtn" className=" xl:hidden" onClick={handleIsOpen}>
               <Image src="/images/icon_hamburger-menu.svg" width={30} height={30} className=" cursor-pointer " alt="HamburgerMenu"></Image>
             </button>
-            <Image className="hidden xl:block 2xl:w-64" src="/images/Logo.svg" width={200} height={200} alt="logo"></Image>
+            <Link href="/">
+              <Image className="hidden xl:block 2xl:w-64" src="/images/Logo.svg" width={200} height={200} alt="logo"></Image>
+            </Link>
             <button className=" xl:hidden">
               <Image src="/images/Basket.svg" width={30} height={30} className=" items" alt="basketIcon"></Image>
             </button>

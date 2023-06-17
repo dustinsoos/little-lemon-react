@@ -2,6 +2,7 @@ import "./globals.css";
 import { Markazi_Text } from "next/font/google";
 import { Karla } from "next/font/google";
 import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 
 export const metadata = {
   title: "Little Lemon",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body className={`${markazi.variable} ${karla.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
