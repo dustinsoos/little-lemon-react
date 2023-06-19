@@ -3,8 +3,8 @@ import React from "react";
 const Reservation = () => {
   return (
     <>
-      <form action="" className="grid justify-center pt-14 pb-14 mt-32 ">
-        <fieldset className=" grid w-96 p-24 bg-slate-700">
+      <form action="" className=" mx-auto w-3/4 lg:w-1/2 justify-center p-8 mt-32 mb-32 bg-ll-primaryGreen ">
+        <fieldset className=" grid ">
           <label htmlFor="res-date" className=" text-white">
             Choose Date
           </label>

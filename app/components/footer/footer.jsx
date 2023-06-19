@@ -16,7 +16,7 @@ const Footer = () => {
     <>
       <footer className=" font-mono pt-16 pb-16 lg:pt-32 lg:pb-32 mt-8 px-4 md:px-24 lg:px-40 xl:px-52 2xl:px-72">
         <div className=" grid justify-center justify-items-center lg:flex lg:justify-between">
-          <Image src="/images/bottomlogo.png" width={100} height={100} alt="bottom-logo" className="mb-8 lg:mb-0 h-auto w-auto"></Image>
+          <Image src="/images/bottomlogo.png" width={100} height={100} alt="bottom-logo" priority={true} className="mb-8 lg:mb-0 w-20"></Image>
           <div className=" mb-8 lg:mb-0 text-center lg:text-left">
             <h3 className=" text-xl font-semibold">Doormat Navigation</h3>
             <ul id="menu" className=" grid mb-4 md:mb-0">

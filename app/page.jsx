@@ -26,6 +26,7 @@ export default function Home() {
               src="/images/restauranfood.jpg"
               width={200}
               height={200}
+              alt="Restaurant Food"
               className="hidden -mb-28 lg:-mb-36 md:block md:w-64 lg:w-72 xl:w-96 rounded-2xl"
             ></Image>
           </div>
@@ -167,13 +168,13 @@ export default function Home() {
               </p>
             </div>
             <div className=" pl-6 mt-12  mx-auto lg:mx-0  relative lg:mt-0 lg:pt-8 xl:pt-8 2xl:pt-0 ">
-              <Image src="/images/Mario and Adrian b.jpg" width={300} height={300} alt="Cooking Image" className=" z-0 xl:w-full"></Image>
+              <Image src="/images/Mario and Adrian b.jpg" width={300} height={300} alt="Cooking Image" className=" z-0 xl:w-full w-auto"></Image>
               <Image
                 src="/images/Mario and Adrian A.jpg"
                 width={300}
                 height={300}
                 alt="Cooking Image"
-                className=" z-10 -mt-4 -ml-6 lg:-mt-8 lg:-ml-16 lg:2xl:-ml-36 xl:w-full"
+                className=" z-10 -mt-4 -ml-6 lg:-mt-8 lg:-ml-16 lg:2xl:-ml-36 xl:w-full  w-auto"
               ></Image>
             </div>
           </div>
