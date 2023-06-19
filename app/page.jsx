@@ -34,9 +34,12 @@ export default function Home() {
           <div className="  mt-16 px-0 lg:mt-32  md:px-24 lg:px-40 xl:px-52 2xl:px-72">
             <div className=" px-4 flex justify-between mt-24">
               <h3 className=" text-2xl font-mono font-bold md:text-3xl lg:text-4xl xl:text-5xl">This weeks specials!</h3>
-              <button className=" text-black font-medium font-sans text-lg rounded-2xl bg-ll-primaryYellow px-4 py-0 2xl:px-8 2xl:py-2 2xl:text-xl hover:bg-ll-primaryGreen hover:text-ll-primaryYellow hover:outline">
+              <Link
+                href="/menu"
+                className=" text-black font-medium font-sans text-lg rounded-2xl bg-ll-primaryYellow px-4 py-0 2xl:px-8 2xl:py-2 2xl:text-xl hover:bg-ll-primaryGreen hover:text-ll-primaryYellow hover:outline"
+              >
                 Online Menu
-              </button>
+              </Link>
             </div>
             <div className=" lg:flex lg:gap-4 xl:gap-8">
               <div className="mt-8 rounded-2xl shadow-xl shadow-black/50 w-4/5 mx-auto">

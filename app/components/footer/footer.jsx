@@ -3,24 +3,21 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-      /* you can also use 'auto' behaviour
-           in place of 'smooth' */
     });
   };
 
   return (
     <>
-      <footer className="pt-16 pb-16 md:pt-32 md:pb-32 mt-32 px-4 md:px-24 lg:px-40 xl:px-52 2xl:px-72">
-        <div className=" grid justify-center justify-items-center md:flex md:justify-between">
-          <Image src="/images/bottomlogo.png" width={100} height={100} alt="bottom-logo" className="mb-8 md:mb-0"></Image>
-          <div className=" mb-8 md:mb-0 text-center md:text-left">
+      <footer className=" font-mono pt-16 pb-16 lg:pt-32 lg:pb-32 mt-8 px-4 md:px-24 lg:px-40 xl:px-52 2xl:px-72">
+        <div className=" grid justify-center justify-items-center lg:flex lg:justify-between">
+          <Image src="/images/bottomlogo.png" width={100} height={100} alt="bottom-logo" className="mb-8 lg:mb-0 h-auto w-auto"></Image>
+          <div className=" mb-8 lg:mb-0 text-center lg:text-left">
             <h3 className=" text-xl font-semibold">Doormat Navigation</h3>
             <ul id="menu" className=" grid mb-4 md:mb-0">
               <Link href="/" className=" underline text-ll-primaryGreen navLink">
@@ -43,18 +40,18 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <div className=" mb-8 md:mb-0 text-center md:text-left">
+          <div className=" mb-8 lg:mb-0 text-center lg:text-left">
             <h3 className=" text-xl font-semibold"> Contact</h3>
             <p>Chicago, IL</p>
             <p>888-888-8888</p>
             <p>littlelemon@business.com</p>
           </div>
-          <div className="grid justify-center justify-items-center md:block">
+          <div className="grid justify-center justify-items-center md:block md:mb-8">
             <h3 className=" text-xl font-semibold mb-4"> Social Media</h3>
-            <div className=" md:flex">
-              <Image src="/images/linkedin.svg" className=" mb-2 md:mb-0 md:mx-auto" alt="linkedin-logo" width={30} height={30}></Image>
-              <Image src="/images/twitter.svg" className=" mb-2 md:mb-0 md:mx-auto" alt="twitter-logo" width={30} height={30}></Image>
-              <Image src="/images/insta.svg" className=" mb-2 md:mb-0 md:mx-auto" alt="instagram-logo" width={30} height={30}></Image>
+            <div className="flex gap-2">
+              <Image src="/images/linkedin.svg" className=" mb-2 md:mb-0 md:mx-auto w-8 h-8 " alt="linkedin-logo" width={30} height={30}></Image>
+              <Image src="/images/twitter.svg" className=" mb-2 md:mb-0 md:mx-auto w-8 h-8" alt="twitter-logo" width={30} height={30}></Image>
+              <Image src="/images/insta.svg" className=" mb-2 md:mb-0 md:mx-auto w-8 h-8" alt="instagram-logo" width={30} height={30}></Image>
             </div>
           </div>
           <button onClick={scrollToTop}>

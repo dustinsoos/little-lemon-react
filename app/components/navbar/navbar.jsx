@@ -21,21 +21,18 @@ const Navbar = () => {
         <nav className=" xl:flex-wrap xl:flex xl:justify-between xl:items-center  font-sans text-xl">
           <div className=" flex justify-between ">
             <button id="menuBtn" className=" xl:hidden" onClick={handleIsOpen}>
-              <Image src="/images/icon_hamburger-menu.svg" width={30} height={30} className=" cursor-pointer " alt="HamburgerMenu"></Image>
+              <Image src="/images/icon_hamburger-menu.svg" width={30} height={30} className=" cursor-pointer h-auto w-auto" alt="HamburgerMenu"></Image>
             </button>
             <Link href="/">
-              <Image className="hidden xl:block 2xl:w-64" src="/images/Logo.svg" width={200} height={200} alt="logo"></Image>
+              <Image className="hidden xl:block 2xl:w-64 h-auto w-auto" src="/images/Logo.svg" width={200} height={200} alt="logo"></Image>
             </Link>
             <button className=" xl:hidden">
-              <Image src="/images/Basket.svg" width={30} height={30} className=" items" alt="basketIcon"></Image>
+              <Image src="/images/Basket.svg" width={30} height={30} className=" items  h-auto w-auto" alt="basketIcon"></Image>
             </button>
           </div>
           <ul id="menu" className="  pt-5  xl:flex xl:gap-14 xl:pt-0 hidden lg:text-2xl ">
             <Link href="/" onClick={handleIsClosed} className=" underline text-ll-primaryGreen navLink">
               Home
-            </Link>
-            <Link href="/about" onClick={handleIsClosed} className="navLink">
-              About
             </Link>
             <Link href="/menu" onClick={handleIsClosed} className="navLink">
               Menu
