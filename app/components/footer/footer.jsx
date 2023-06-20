@@ -23,9 +23,6 @@ const Footer = () => {
               <Link href="/" className=" underline text-ll-primaryGreen navLink">
                 Home
               </Link>
-              <Link href="/about" className="navLink">
-                About
-              </Link>
               <Link href="/menu" className="navLink">
                 Menu
               </Link>

@@ -33,9 +33,9 @@ const Navbar = () => {
             <Link href="/">
               <Image className="hidden xl:block 2xl:w-64 h-auto w-auto" src="/images/Logo.svg" priority={true} width={200} height={200} alt="logo"></Image>
             </Link>
-            <button className=" xl:hidden">
+            <Link href="/orderonline" className=" xl:hidden">
               <Image src="/images/Basket.svg" width={30} height={30} className=" items   w-10 h-10" alt="basketIcon"></Image>
-            </button>
+            </Link>
           </div>
           <ul id="menu" className="  pt-5  xl:flex xl:gap-14 xl:pt-0 hidden lg:text-2xl ">
             <Link href="/" onClick={handleIsClosed} className=" underline text-ll-primaryGreen navLink">
