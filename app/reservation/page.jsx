@@ -13,23 +13,18 @@ const Reservation = () => {
   const handleSubmit = (e) => {
     //Form reset
     e.preventDefault();
-    setName("");
-    setDate("");
-    setTime("");
-    setGuests("");
-    setOccasion("");
-    setPhone("");
+    // setName("");
+    // setDate("");
+    // setTime("");
+    // setGuests("");
+    // setOccasion("");
+    // setPhone("");
 
-    //Submitted Data
-    const submitted = {
-      name,
-      date,
-      time,
-      guests,
-    };
-    console.log("Submitted:", submitted);
+    const formHidden = document.getElementById("my-form");
+    formHidden.classList.add("hidden");
 
-    //Todo: Send Data Over the Server
+    const submissionShow = document.getElementById("submission-success");
+    submissionShow.classList.remove("hidden");
   };
 
   return (
@@ -39,6 +34,7 @@ const Reservation = () => {
           <h1 className=" text-center font-sans text-5xl xl:text-6xl 2xl:text-7xl text-ll-primaryYellow">Reserve A Table</h1>
         </section>
         <form
+          id="my-form"
           action=""
           className=" font-mono text-lg mx-auto w-11/12 md:w-3/4 lg:w-2/4 xl:w-1/3 justify-center p-8 mt-16 mb-32  bg-ll-primaryGreen  shadow-xl shadow-black/50 rounded-2xl "
           onSubmit={handleSubmit}
@@ -136,6 +132,15 @@ const Reservation = () => {
             </fieldset>
           </div>
         </form>
+        <div
+          id="submission-success"
+          className="bg-ll-primaryGreen p-14 mt-64 mb-64  shadow-xl shadow-black/50  text-center text-white font-mono text-xl w-11/12 md:w-1/2 xl:w-1/3 mx-auto rounded-2xl  hidden"
+        >
+          <p className="mb-4 text-ll-primaryYellow text-2xl">Thanks {name} for reserving a table with Little Lemon!</p>
+          <p className="mb-2">Number of Guests: {guests}</p>
+          <p className="mb-2">Date: {date}</p>
+          <p className="mb-2">At: {time}</p>
+        </div>
       </main>
     </>
   );

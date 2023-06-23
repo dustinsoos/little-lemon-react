@@ -33,6 +33,9 @@ const Footer = () => {
                 Order Online
               </Link>
               <Link href="/login " className="navLink">
+                Dashboard
+              </Link>
+              <Link href="/login " className="navLink">
                 Login
               </Link>
             </ul>
