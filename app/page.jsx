@@ -33,7 +33,7 @@ export default function Home() {
         </section>
         <section id="menu-cards">
           <div className="  mt-16 px-0 lg:mt-32  md:px-24 lg:px-40 xl:px-52 2xl:px-72">
-            <div className=" px-4 flex justify-between mt-24">
+            <div className=" px-4 flex justify-between items-center mt-24">
               <h3 className=" text-2xl font-mono font-bold md:text-3xl lg:text-4xl xl:text-5xl">This weeks specials!</h3>
               <Link
                 href="/menu"
