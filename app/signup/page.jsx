@@ -46,7 +46,7 @@ const signup = () => {
                 type="text"
                 id="email"
                 placeholder="example@gmail.com"
-                className="p-2  "
+                className="p-2 required:border-red-500 "
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -59,9 +59,11 @@ const signup = () => {
               <input
                 type="password"
                 id="password"
+                min={8}
                 placeholder="Password"
                 className="p-2 "
                 required
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -72,7 +74,7 @@ const signup = () => {
                 type="password"
                 id="confirm-password"
                 placeholder="Confirm Password"
-                className="p-2  "
+                className="p-2 invalid:border-red-500 "
                 required
                 value={conpassword}
                 onChange={(e) => setConPassword(e.target.value)}
@@ -89,7 +91,7 @@ const signup = () => {
             </fieldset>
           </div>
         </form>
-        <section className="h-screen">
+        <section className="">
           <div
             id="signup-success"
             className=" bg-ll-primaryGreen p-14 mt-64 mb-64  shadow-xl shadow-black/50  text-center text-white font-mono text-xl w-11/12 md:w-1/2 xl:w-1/3 mx-auto rounded-2xl  hidden "
