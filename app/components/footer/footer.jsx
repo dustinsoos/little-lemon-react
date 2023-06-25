@@ -53,6 +53,7 @@ const Footer = () => {
               <Image src="/images/twitter.svg" className=" mb-2 md:mb-0 md:mx-auto w-8 h-8" alt="twitter-logo" width={30} height={30}></Image>
               <Image src="/images/insta.svg" className=" mb-2 md:mb-0 md:mx-auto w-8 h-8" alt="instagram-logo" width={30} height={30}></Image>
             </div>
+            <p className="mt-10">&#169; Dustin Soos</p>
           </div>
           <button onClick={scrollToTop}>
             <Image src="/images/arrowup.svg" alt="arrowup-icon" className="mt-8 md:mt-0 z-10 	animate-bounce " width={40} height={40}></Image>
