@@ -94,9 +94,10 @@ const signup = () => {
         <section className="">
           <div
             id="signup-success"
-            className=" bg-ll-primaryGreen p-14 mt-64 mb-64  shadow-xl shadow-black/50  text-center text-white font-mono text-xl w-11/12 md:w-1/2 xl:w-1/3 mx-auto rounded-2xl  hidden "
+            className=" bg-ll-primaryGreen p-14 mt-64 mb-64  shadow-xl shadow-black/50  text-center text-white font-mono text-xl w-full md:w-1/2 xl:w-1/3 mx-auto rounded-2xl  hidden "
           >
-            <p className="mb-4 text-ll-primaryYellow text-2xl">Welcome! An email confirmation will be sent to {email} </p>
+            <p className="mb-4 text-center text-ll-primaryYellow text-2xl">Welcome! An email confirmation will be sent to </p>
+            <p>{email}</p>
           </div>
         </section>
       </main>
