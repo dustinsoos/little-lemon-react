@@ -6,7 +6,7 @@ import Link from "next/link";
 const Dashboard = () => {
   return (
     <>
-      <main className="h-screen mb-32">
+      <main className="h-screen mb-64">
         <div className=" mt-32">
           <h1 className="font-sans  text-5xl xl:text-6xl 2xl:text-7xl px-4 md:px-24 lg:px-40 xl:px-52 2xl:px-72">Recent Orders</h1>
           <section className=" pt-28 pb-28 bg-ll-primaryGreen">
