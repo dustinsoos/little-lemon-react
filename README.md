@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+https://little-lemon-react-henna.vercel.app/ Live Site
 
-## Getting Started
+Everything in this Frontend app is mobile responsive.
 
-First, run the development server:
+Navbar/Footer is all pushed throughout each page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This project was meant to create a form to collect data from a UI standpoint, from there I just built out everything to make sense as a full online website.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Homepage
+![little-lemon-project](https://github.com/dustinsoos/little-lemon-react/assets/106705486/f8fcd6f4-3648-44dd-beeb-b16a8c1ad853)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+![frontmenu-readme](https://github.com/dustinsoos/little-lemon-react/assets/106705486/5ade19c3-4351-4467-a102-b0d97074d184)
+![testimonials](https://github.com/dustinsoos/little-lemon-react/assets/106705486/2b27e07d-d46a-4cc5-afbc-494f6b9647c9)
+![about-owners](https://github.com/dustinsoos/little-lemon-react/assets/106705486/e5e92cb7-4d6d-4b31-ad66-4c74417cdc61)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Sample of Menu Page
+![menu](https://github.com/dustinsoos/little-lemon-react/assets/106705486/df86ced0-633e-4b42-9425-7c043340ace6)
 
-To learn more about Next.js, take a look at the following resources:
+Reservation Form
+![reserve-form](https://github.com/dustinsoos/little-lemon-react/assets/106705486/e91654bf-ea00-42ba-8691-8189da6e1e18)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Online-Order
+![order-delivery](https://github.com/dustinsoos/little-lemon-react/assets/106705486/de558135-705b-4158-a64e-aaf97689128f)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Dashboard - Only way to see this is by clicking login
+![dashboard](https://github.com/dustinsoos/little-lemon-react/assets/106705486/d874e1e5-fe37-4830-8335-d75708068f02)
 
-## Deploy on Vercel
+Login/Sign-up
+![login](https://github.com/dustinsoos/little-lemon-react/assets/106705486/b6264426-a9a5-4465-abf7-c099b3cad915)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Sign Up Form
+![sign-up-form](https://github.com/dustinsoos/little-lemon-react/assets/106705486/a048982e-efc7-498c-b422-3ce26493c4fd)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
