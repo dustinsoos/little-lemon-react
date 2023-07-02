@@ -28,18 +28,18 @@ const signup = () => {
   return (
     <>
       <main>
-        <section id="signup-text" className=" pt-28 pb-28 mt-16 bg-ll-primaryGreen">
-          <h1 className="  text-center font-sans text-5xl xl:text-6xl 2xl:text-7xl text-ll-primaryYellow">Sign Up</h1>
+        <section id="signup-text" className=" mt-16 bg-ll-primaryGreen pb-28 pt-28">
+          <h1 className="  text-center font-sans text-5xl text-ll-primaryYellow xl:text-6xl 2xl:text-7xl">Sign Up</h1>
         </section>
         <form
           id="signup-form"
           action=""
-          className=" grid font-mono text-lg mx-auto w-11/12 md:w-3/4 lg:w-2/4 xl:w-1/3 p-8 mt-16 mb-32  bg-ll-primaryGreen  shadow-xl shadow-black/50 rounded-2xl "
+          className=" mx-auto mb-32 mt-16 grid w-11/12 rounded-2xl bg-ll-primaryGreen p-8 font-mono text-lg shadow-xl  shadow-black/50  md:w-3/4 lg:w-2/4 xl:w-1/3 "
           onSubmit={handleSubmit}
         >
           <div className=" ">
-            <fieldset className="grid mb-8">
-              <label htmlFor="email" className="text-white mb-1">
+            <fieldset className="mb-8 grid">
+              <label htmlFor="email" className="mb-1 text-white">
                 Email:
               </label>
               <input
@@ -52,8 +52,8 @@ const signup = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </fieldset>
-            <fieldset className="grid mb-8">
-              <label htmlFor="email" className="text-white mb-1">
+            <fieldset className="mb-8 grid">
+              <label htmlFor="email" className="mb-1 text-white">
                 Password:
               </label>
               <input
@@ -67,7 +67,7 @@ const signup = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <label htmlFor="email" className="text-white mb-1">
+              <label htmlFor="email" className="mb-1 text-white">
                 Confirm Password:
               </label>
               <input
@@ -85,7 +85,7 @@ const signup = () => {
                 id="submission"
                 type="submit"
                 value="Sign Up"
-                className="text-black bg-white px-5 py-2  hover:bg-ll-primaryGreen hover:border-2 hover:border-white hover:text-white disabled:bg-opacity-25 "
+                className="bg-white px-5 py-2 text-black  hover:border-2 hover:border-white hover:bg-ll-primaryGreen hover:text-white disabled:bg-opacity-25 "
                 disabled={(!email, !password, !conpassword)}
               />
             </fieldset>
@@ -94,9 +94,9 @@ const signup = () => {
         <section className="">
           <div
             id="signup-success"
-            className=" bg-ll-primaryGreen p-14 mt-64 mb-64  shadow-xl shadow-black/50  text-center text-white font-mono text-xl w-full md:w-1/2 xl:w-1/3 mx-auto rounded-2xl  hidden "
+            className=" mx-auto mb-64 mt-64 hidden  w-full rounded-2xl  bg-ll-primaryGreen p-14 text-center font-mono text-xl text-white shadow-xl shadow-black/50 md:w-1/2  xl:w-1/3 "
           >
-            <p className="mb-4 text-center text-ll-primaryYellow text-2xl">Welcome! An email confirmation will be sent to </p>
+            <p className="mb-4 text-center text-2xl text-ll-primaryYellow">Welcome! An email confirmation will be sent to </p>
             <p>{email}</p>
           </div>
         </section>

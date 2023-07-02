@@ -18,27 +18,27 @@ const Navbar = () => {
   return (
     <main className="mt-12 px-4 md:px-24 lg:px-40 xl:px-52 2xl:px-72">
       <div className="">
-        <nav className=" xl:flex-wrap xl:flex xl:justify-between xl:items-center  font-sans text-xl">
+        <nav className=" font-sans text-xl xl:flex xl:flex-wrap  xl:items-center xl:justify-between">
           <div className=" flex justify-between ">
             <button id="menuBtn" className=" xl:hidden" onClick={handleIsOpen}>
               <Image
                 src="/images/icon_hamburger-menu.svg"
                 width={30}
                 height={30}
-                className=" cursor-pointer w-8 h-8"
+                className=" h-8 w-8 cursor-pointer"
                 alt="HamburgerMenu"
                 priority={true}
               ></Image>
             </button>
             <Link href="/">
-              <Image className="hidden xl:block 2xl:w-64 h-auto w-auto" src="/images/Logo.svg" priority={true} width={200} height={200} alt="logo"></Image>
+              <Image className="hidden h-auto w-auto xl:block 2xl:w-64" src="/images/Logo.svg" priority={true} width={200} height={200} alt="logo"></Image>
             </Link>
             <Link href="/orderonline" className=" xl:hidden">
-              <Image src="/images/Basket.svg" width={30} height={30} priority className=" items   w-10 h-10" alt="basketIcon"></Image>
+              <Image src="/images/Basket.svg" width={30} height={30} priority className=" items   h-10 w-10" alt="basketIcon"></Image>
             </Link>
           </div>
-          <ul id="menu" className="  pt-5  xl:flex xl:gap-14 xl:pt-0 hidden lg:text-2xl ">
-            <Link href="/" onClick={handleIsClosed} className=" underline text-ll-primaryGreen navLink">
+          <ul id="menu" className="  hidden  pt-5 lg:text-2xl xl:flex xl:gap-14 xl:pt-0 ">
+            <Link href="/" onClick={handleIsClosed} className=" navLink text-ll-primaryGreen underline">
               Home
             </Link>
             <Link href="/menu" onClick={handleIsClosed} className="navLink">
