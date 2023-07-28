@@ -27,10 +27,17 @@ const OrderOnline = () => {
     <>
       <main className="sm:64 mb-96 mt-32 h-screen ">
         <section className=" mt-16 bg-ll-primaryGreen pb-28 pt-28">
-          <h1 className=" text-center font-sans text-5xl text-ll-primaryYellow xl:text-6xl 2xl:text-7xl">Order A Delivery</h1>
+          <h1 className=" text-center font-sans text-5xl text-ll-primaryYellow xl:text-6xl 2xl:text-7xl">
+            Order A Delivery
+          </h1>
         </section>
 
-        <form action="" onSubmit={handleSubmit} id="order-form" className=" grid pb-14 pt-14 font-mono text-black ">
+        <form
+          action=""
+          onSubmit={handleSubmit}
+          id="order-form"
+          className=" grid pb-14 pt-14 font-mono text-black "
+        >
           <div className="mx-auto w-11/12 rounded-2xl border border-ll-primaryGreen bg-white shadow-xl shadow-black/50 md:w-2/3 lg:w-2/4 xl:w-1/3">
             <Image
               src="/images/greek salad.jpg"
@@ -41,14 +48,24 @@ const OrderOnline = () => {
             ></Image>
             <div className="flex justify-between px-8 lg:px-16 lg:text-xl">
               <h3 className="font-semibold">Greek Salad</h3>
-              <p className="font-mono font-semibold text-ll-secondarySalmon">&#36;12.99</p>
+              <p className="font-mono font-semibold text-ll-secondarySalmon">
+                &#36;12.99
+              </p>
             </div>
             <div className="mt-2 grid justify-center  gap-2 px-8 lg:px-16 lg:text-xl">
-              <h3 className="mt-4  font-mono text-2xl font-bold md:text-3xl  lg:text-3xl xl:text-3xl 2xl:text-3xl">Protein or Veggie</h3>
+              <h3 className="mt-4  font-mono text-2xl font-bold md:text-3xl  lg:text-3xl xl:text-3xl 2xl:text-3xl">
+                Protein or Veggie
+              </h3>
               <hr />
               <div className="flex justify-center gap-2 ">
                 <label htmlFor="steak-option">Steak:</label>
-                <input type="checkbox" name="steak" id="steak-option" defaultChecked={false} onChange={handleCheckboxChange} />
+                <input
+                  type="checkbox"
+                  name="steak"
+                  id="steak-option"
+                  defaultChecked={false}
+                  onChange={handleCheckboxChange}
+                />
                 <p>+ 1.00</p>
               </div>
               <div className="flex justify-center  gap-2">
@@ -61,7 +78,9 @@ const OrderOnline = () => {
               </div>
             </div>
             <div className="mt-2 grid items-center justify-center gap-2 px-8 lg:px-16 lg:text-xl">
-              <h3 className="mt-4  font-mono text-2xl font-bold md:text-3xl  lg:text-3xl xl:text-3xl 2xl:text-3xl">What else would you like?</h3>
+              <h3 className="mt-4  font-mono text-2xl font-bold md:text-3xl  lg:text-3xl xl:text-3xl 2xl:text-3xl">
+                What else would you like?
+              </h3>
               <hr />
               <div className="flex justify-center gap-2">
                 <label htmlFor="beans-option">Beans:</label>
@@ -96,8 +115,12 @@ const OrderOnline = () => {
           id="delivery-success"
           className=" mx-auto mb-64 mt-64 hidden  w-11/12 rounded-2xl  bg-ll-primaryGreen p-14 text-center font-mono text-xl text-white shadow-xl shadow-black/50 md:w-1/2  xl:w-1/3"
         >
-          <p className=" text-2xl text-ll-primaryYellow lg:text-3xl ">Thanks for ordering a delivery with Little Lemon!</p>
-          <p className=" mt-2">Your order will arrive in approximately 30 minutes</p>
+          <p className=" text-2xl text-ll-primaryYellow lg:text-3xl ">
+            Thanks for ordering a delivery with Little Lemon!
+          </p>
+          <p className=" mt-2">
+            Your order will arrive in approximately 30 minutes
+          </p>
         </div>
       </main>
     </>

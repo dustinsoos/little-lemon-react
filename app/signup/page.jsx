@@ -28,8 +28,13 @@ const signup = () => {
   return (
     <>
       <main>
-        <section id="signup-text" className=" mt-16 bg-ll-primaryGreen pb-28 pt-28">
-          <h1 className="  text-center font-sans text-5xl text-ll-primaryYellow xl:text-6xl 2xl:text-7xl">Sign Up</h1>
+        <section
+          id="signup-text"
+          className=" mt-16 bg-ll-primaryGreen pb-28 pt-28"
+        >
+          <h1 className="  text-center font-sans text-5xl text-ll-primaryYellow xl:text-6xl 2xl:text-7xl">
+            Sign Up
+          </h1>
         </section>
         <form
           id="signup-form"
@@ -96,7 +101,9 @@ const signup = () => {
             id="signup-success"
             className=" mx-auto mb-64 mt-64 hidden  w-full rounded-2xl  bg-ll-primaryGreen p-14 text-center font-mono text-xl text-white shadow-xl shadow-black/50 md:w-1/2  xl:w-1/3 "
           >
-            <p className="mb-4 text-center text-2xl text-ll-primaryYellow">Welcome! An email confirmation will be sent to </p>
+            <p className="mb-4 text-center text-2xl text-ll-primaryYellow">
+              Welcome! An email confirmation will be sent to{" "}
+            </p>
             <p>{email}</p>
           </div>
         </section>

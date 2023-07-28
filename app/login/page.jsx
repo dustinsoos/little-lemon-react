@@ -12,7 +12,9 @@ const Login = () => {
           >
             Login
           </Link>
-          <p className=" mb-10 text-white">Hint: To see dashboard click login.</p>
+          <p className=" mb-10 text-white">
+            Hint: To see dashboard click login.
+          </p>
           <Link
             href="/signup"
             className="block rounded border-2 border-white bg-ll-primaryGreen px-4 py-2 text-center font-bold text-white hover:bg-white hover:text-ll-primaryGreen"

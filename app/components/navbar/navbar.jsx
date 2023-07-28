@@ -31,23 +31,52 @@ const Navbar = () => {
               ></Image>
             </button>
             <Link href="/">
-              <Image className="hidden h-auto w-auto xl:block 2xl:w-64" src="/images/Logo.svg" priority={true} width={200} height={200} alt="logo"></Image>
+              <Image
+                className="hidden h-auto w-auto xl:block 2xl:w-64"
+                src="/images/Logo.svg"
+                priority={true}
+                width={200}
+                height={200}
+                alt="logo"
+              ></Image>
             </Link>
             <Link href="/orderonline" className=" xl:hidden">
-              <Image src="/images/Basket.svg" width={30} height={30} priority className=" items   h-10 w-10" alt="basketIcon"></Image>
+              <Image
+                src="/images/Basket.svg"
+                width={30}
+                height={30}
+                priority
+                className=" items   h-10 w-10"
+                alt="basketIcon"
+              ></Image>
             </Link>
           </div>
-          <ul id="menu" className="  hidden  pt-5 lg:text-2xl xl:flex xl:gap-14 xl:pt-0 ">
-            <Link href="/" onClick={handleIsClosed} className=" navLink text-ll-primaryGreen underline">
+          <ul
+            id="menu"
+            className="  hidden  pt-5 lg:text-2xl xl:flex xl:gap-14 xl:pt-0 "
+          >
+            <Link
+              href="/"
+              onClick={handleIsClosed}
+              className=" navLink text-ll-primaryGreen underline"
+            >
               Home
             </Link>
             <Link href="/menu" onClick={handleIsClosed} className="navLink">
               Menu
             </Link>
-            <Link href="/reservation" onClick={handleIsClosed} className="navLink">
+            <Link
+              href="/reservation"
+              onClick={handleIsClosed}
+              className="navLink"
+            >
               Reservation
             </Link>
-            <Link href="/orderonline" onClick={handleIsClosed} className="navLink">
+            <Link
+              href="/orderonline"
+              onClick={handleIsClosed}
+              className="navLink"
+            >
               Order Online
             </Link>
             <Link href="/login " onClick={handleIsClosed} className="navLink">
