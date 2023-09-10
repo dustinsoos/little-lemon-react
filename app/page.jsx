@@ -32,6 +32,7 @@ export default function Home() {
               width={200}
               height={200}
               alt="Restaurant Food"
+              priority={true}
               className="-mb-28 hidden rounded-2xl md:block md:w-64 lg:-mb-36 lg:w-72 xl:w-96"
             ></Image>
           </div>
@@ -58,6 +59,7 @@ export default function Home() {
                       width={500}
                       height={500}
                       alt="Greek Salad"
+                      priority={true}
                       className=" w-full rounded-t-2xl object-cover "
                     />
                   </div>
@@ -90,6 +92,7 @@ export default function Home() {
                       width={500}
                       height={500}
                       alt="Bruschetta"
+                      priority={true}
                       className=" w-full rounded-t-2xl object-cover "
                     />
                   </div>
@@ -122,6 +125,7 @@ export default function Home() {
                       width={500}
                       height={500}
                       alt="Lemon Dessert"
+                      priority={true}
                       className=" w-full rounded-t-2xl object-cover"
                     />
                   </div>
@@ -166,6 +170,7 @@ export default function Home() {
                     width={50}
                     height={50}
                     alt="Testimonial Avatar Picture"
+                    priority={true}
                   ></Image>
                   <p className=" pl-2 ">- Andrew</p>
                 </div>
@@ -181,6 +186,7 @@ export default function Home() {
                     width={50}
                     height={50}
                     alt="Testimonial Avatar Picture"
+                    priority={true}
                   ></Image>
                   <p className=" pl-2 ">- Maria</p>
                 </div>
@@ -197,6 +203,7 @@ export default function Home() {
                     width={50}
                     height={50}
                     alt="Testimonial Avatar Picture"
+                    priority={true}
                   ></Image>
                   <p className=" pl-2 ">- Monique</p>
                 </div>
@@ -214,6 +221,7 @@ export default function Home() {
                     width={50}
                     height={50}
                     alt="Testimonial Avatar Picture"
+                    priority={true}
                   ></Image>
                   <p className=" pl-2 ">- Thomas</p>
                 </div>
@@ -252,6 +260,7 @@ export default function Home() {
                 height={300}
                 alt="Cooking Image"
                 className=" relative z-0 w-auto xl:w-96"
+                priority={true}
               ></Image>
               <Image
                 src="/images/Mario and Adrian A.jpg"
@@ -259,6 +268,7 @@ export default function Home() {
                 height={300}
                 alt="Cooking Image"
                 className=" relative z-10 -ml-6 -mt-4 w-auto lg:-ml-16 lg:-mt-8  xl:w-96 lg:2xl:-ml-36"
+                priority={true}
               ></Image>
             </div>
           </div>

@@ -30,6 +30,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Bruschetta Img"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover"
                   />
                 </div>
@@ -62,6 +63,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Soup pic"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover "
                   />
                 </div>
@@ -95,6 +97,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Mediterranean Platter"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover "
                   />
                 </div>
@@ -138,6 +141,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Greek Salad"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover"
                   />
                 </div>
@@ -170,6 +174,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Salmon Image"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover "
                   />
                 </div>
@@ -203,6 +208,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Pork Image"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover "
                   />
                 </div>
@@ -245,6 +251,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Lemoncake Image"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover"
                   />
                 </div>
@@ -277,6 +284,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Truffle Image"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover "
                   />
                 </div>
@@ -310,6 +318,7 @@ const Menu = () => {
                     width={500}
                     height={500}
                     alt="Ice Cream Image"
+                    priority={true}
                     className=" h-56 w-full rounded-t-2xl object-cover "
                   />
                 </div>
