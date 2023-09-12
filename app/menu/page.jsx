@@ -26,7 +26,7 @@ const Menu = () => {
               <div className="relative">
                 <div className="">
                   <Image
-                    src="/images/bruchetta.svg"
+                    src="/images/brushetta.jpg"
                     width={500}
                     height={500}
                     alt="Bruschetta Img"

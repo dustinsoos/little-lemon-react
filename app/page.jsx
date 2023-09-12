@@ -53,14 +53,14 @@ export default function Home() {
             <div className=" lg:flex lg:gap-4 xl:gap-8">
               <div className="mx-auto mt-8 w-4/5 rounded-2xl shadow-xl shadow-black/50">
                 <div className="relative">
-                  <div className="aspect-w-5 aspect-h-3">
+                  <div className="h-full">
                     <Image
                       src="/images/greek salad.jpg"
                       width={500}
                       height={500}
                       alt="Greek Salad"
                       priority={true}
-                      className=" w-full rounded-t-2xl object-cover "
+                      className=" w-full rounded-t-2xl object-fill "
                     />
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/orderonline"
-                    className="block rounded border-2 border-ll-primaryGreen bg-ll-primaryGreen px-4 py-2 text-center font-bold text-white hover:bg-white hover:text-ll-primaryGreen"
+                    className="2xl:mt block rounded border-2 border-ll-primaryGreen bg-ll-primaryGreen px-4 py-2 text-center font-bold text-white hover:bg-white hover:text-ll-primaryGreen lg:mt-40"
                   >
                     Order a Delivery
                   </Link>
@@ -86,14 +86,14 @@ export default function Home() {
               </div>
               <div className="mx-auto mt-8 w-4/5 rounded-2xl shadow-xl shadow-black/50">
                 <div className="relative">
-                  <div className="aspect-w-5 aspect-h-3">
+                  <div className="h-full ">
                     <Image
-                      src="/images/bruchetta.svg"
+                      src="/images/brushetta.jpg"
                       width={500}
                       height={500}
                       alt="Bruschetta"
                       priority={true}
-                      className=" w-full rounded-t-2xl object-cover "
+                      className=" w-full rounded-t-2xl object-fill "
                     />
                   </div>
                 </div>
@@ -119,14 +119,14 @@ export default function Home() {
               </div>
               <div className="mx-auto mt-8 w-4/5 rounded-2xl shadow-xl shadow-black/50">
                 <div className="relative">
-                  <div className="aspect-w-5 aspect-h-3">
+                  <div className="h-full">
                     <Image
                       src="/images/lemon dessert.jpg"
                       width={500}
                       height={500}
                       alt="Lemon Dessert"
                       priority={true}
-                      className=" w-full rounded-t-2xl object-cover"
+                      className=" w-full rounded-t-2xl object-fill"
                     />
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function Home() {
                   </p>
                   <Link
                     href="/orderonline"
-                    className="block rounded border-2 border-ll-primaryGreen bg-ll-primaryGreen px-4 py-2 text-center font-bold text-white hover:bg-white hover:text-ll-primaryGreen"
+                    className="block rounded border-2 border-ll-primaryGreen bg-ll-primaryGreen px-4 py-2 text-center font-bold text-white hover:bg-white hover:text-ll-primaryGreen lg:mt-32"
                   >
                     Order a Delivery
                   </Link>
